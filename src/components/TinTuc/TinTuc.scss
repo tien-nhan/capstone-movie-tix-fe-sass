@@ -1,0 +1,44 @@
+#tintuc {
+  .space {
+    height: 120px;
+    max-width: 940px;
+    margin: auto;
+    width: 100%;
+    background: url("../../../public/images/back-news.png") 0% 0% / 100%
+      no-repeat;
+  }
+  .MuiTab-textColorPrimary.Mui-selected {
+    color: #fa5238 !important;
+    opacity: 1;
+  }
+  .MuiTab-wrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MuiTabs-indicator {
+    display: none;
+  }
+  .container-tin-tuc {
+    opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    .row {
+      // flex-wrap: nowrap;
+      margin-right: 0;
+      margin-left: 0;
+      .card-title {
+        margin-bottom: 0.75rem;
+      }
+      a {
+        text-decoration: none;
+        background-color: transparent;
+      }
+      h6 {
+        font-size: 1rem;
+        margin-left: 10px;
+      }
+    }
+  }
+}

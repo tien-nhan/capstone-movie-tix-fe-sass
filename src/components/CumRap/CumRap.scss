@@ -1,0 +1,22 @@
+#cumrap {
+  .space {
+    height: 120px;
+    max-width: 940px;
+    margin: auto;
+    width: 100%;
+    background: url("../../../public/images/back-news.png") 0% 0% / 100%
+      no-repeat;
+  }
+  .MuiTab-wrapper {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .MuiTab-textColorPrimary.Mui-selected {
+    opacity: 1;
+  }
+  .MuiTabs-indicator {
+    display: none;
+  }
+}

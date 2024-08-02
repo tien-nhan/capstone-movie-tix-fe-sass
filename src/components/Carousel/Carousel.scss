@@ -1,0 +1,86 @@
+#carousel {
+  .slick-slider:hover > .slick-list .slick-track .play {
+    opacity: 1;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 12%;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+      }
+      button:before {
+        font-family: "slick";
+        font-size: 12px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: "•";
+        text-align: center;
+        opacity: 1;
+        color: #d8d8d8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+    .slick-active button:before {
+      opacity: 0.75;
+      color: #fb4226;
+    }
+  }
+  .jss58 > div {
+    width: auto !important;
+  }
+  .jss59 input {
+    color: rgb(24, 3, 3) !important;
+  }
+  .slick-slider {
+    .MuiSvgIcon-root {
+      top: 48%;
+      color: #d8d8d8 !important;
+      width: 50px;
+      cursor: pointer;
+      height: 100px;
+      z-index: 2;
+      position: absolute;
+      transform: translateY(-50%);
+      transition: all 0.2s;
+    }
+    .MuiSvgIcon-root:hover {
+      color: #fb4226 !important;
+    }
+    .slick-prev {
+      left: 15px;
+    }
+    .slick-next {
+      right: 15px;
+    }
+  }
+  
+}

@@ -1,0 +1,177 @@
+#lichchieu {
+  padding-top: 80px;
+  button:focus {
+    outline: none !important;
+  }
+  .slick-slider:hover > .slick-list .slick-track .play {
+    opacity: 1;
+  }
+  .MuiPaper-root {
+    top: unset !important;
+  }
+  .jss78 > span:hover {
+    font-size: 24px;
+  }
+  .MuiTab-wrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .MuiTabs-indicator {
+    display: none;
+  }
+  .MuiTab-textColorInherit.Mui-selected {
+    opacity: 1;
+  }
+  .Mui-selected {
+    color: rgb(250, 82, 56) !important;
+  }
+  .slick-slider {
+    .slick-next,
+    .slick-prev {
+      top: 48%;
+      color: #d8d8d8 !important;
+      width: 50px;
+      cursor: pointer;
+      height: 100px;
+      z-index: 2;
+      position: absolute;
+      transform: translateY(-50%);
+      transition: all 0.2s;
+    }
+    .MuiSvgIcon-root:hover {
+      color: #fb4226 !important;
+    }
+    .slick-prev {
+      left: -82px;
+    }
+    .slick-next {
+      right: -82px;
+    }
+  }
+
+  .item-film {
+    width: 25%;
+    display: inline-block;
+    .film {
+      cursor: auto;
+      .film__img {
+        position: relative;
+        .film__poster {
+          .film__overlay {
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background: linear-gradient(0deg, #000, transparent);
+            opacity: 0;
+            transition: all s s 0.2 0.2;
+          }
+          .play__trailer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 50px;
+            line-height: 60px;
+            cursor: pointer;
+            transition: all s 0.2;
+            opacity: 0;
+          }
+        }
+      }
+      .film__content {
+        position: relative;
+        padding-top: 10px;
+        .film__name {
+          min-height: 100px;
+          .name {
+            font-weight: 500;
+            height: 42px;
+            max-height: 42px;
+            font-size: 16px;
+            color: #000;
+            line-height: 22px;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            .c18 {
+              font-size: 14px;
+              background-color: #fb4226;
+              border-radius: 4px;
+              padding: 1px 5px 0;
+              color: #fff;
+              min-width: 33px;
+              text-align: center;
+              display: inline-block;
+              margin-right: 8px;
+              line-height: 19px;
+            }
+          }
+          .text_info {
+            padding-top: 5px;
+            color: #4a4a4a;
+            font-size: 14px;
+          }
+        }
+        .film__button {
+          cursor: pointer;
+          a {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 0px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            opacity: 0;
+            transition: all s 0.2;
+            background: rgb(251, 66, 38);
+          }
+        }
+      }
+    }
+
+    .film:hover {
+      .film__img {
+        .film__poster {
+          .film__overlay {
+            opacity: 1 !important;
+            transition: all 0.2s !important;
+          }
+          .play__trailer {
+            opacity: 1;
+            transition: all 0.2s;
+          }
+        }
+      }
+
+      .film__content {
+        .film__name {
+          opacity: 0;
+          transition: all 0.2s;
+        }
+        .film__button {
+          a {
+            opacity: 1;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+  }
+}

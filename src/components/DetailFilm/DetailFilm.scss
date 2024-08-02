@@ -1,0 +1,29 @@
+#TapMovieDetail {
+  button:focus {
+    outline: none !important;
+  }
+  .MuiTabs-indicator {
+    display: none;
+  }
+  .MuiTab-wrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header {
+    .Mui-selected {
+      color: #fb4226 !important;
+      font-size: 18px !important;
+    }
+  }
+  .MuiTab-textColorPrimary.Mui-selected {
+    opacity: 1;
+  }
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
